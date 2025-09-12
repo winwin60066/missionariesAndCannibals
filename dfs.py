@@ -2,7 +2,6 @@ from state import State
 from utils import nextChild
 
 def dfs(ML, CL, boat, m_total, c_total, boat_capacity):
-    print("--- Depth-First Search ---")
     initialState = State(ML, CL, boat, m_total, c_total, boat_capacity)
     if initialState.goal():
         return initialState
