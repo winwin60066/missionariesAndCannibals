@@ -29,7 +29,7 @@ def nextChild(currentState):
 
 def print_solution(solution):
     if not solution:
-        print("No solution found. The problem is unsolvable with given values")
+        print("\n[No solution found. The problem is unsolvable with given values]\n")
         return None
     
     path = []

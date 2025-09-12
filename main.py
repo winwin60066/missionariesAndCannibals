@@ -21,7 +21,7 @@ def main(ML, CL, boat_capacity):
     depth = print_solution(solution)
     if total_nodes > 0:
         branching_factor = total_children / total_nodes
-        print(f"Approximate branching factor: {branching_factor:.2f}")
+        print(f"\nApproximate branching factor: {branching_factor:.2f}")
         print(f"Time taken: {end_time - start_time:.6f} seconds")
         print(f"Peak memory used: {peak / 1024:.2f} KB")
         print("-"*61, "\n")
@@ -42,7 +42,8 @@ if __name__ == "__main__":
 
     print("\n---------------- Missionaries and Cannibals (Death-First Search) ----------------\n")
     for idx, (M, C, B) in enumerate(test_cases, start=1):
-        print(f"--- Test Case {idx} --- \nScenario: Missionaries = {M}, Cannibals = {C}, Boat = {B}")
+        print(f"----------------------- Test Case {idx} -----------------------\nScenario: Missionaries = {M}, Cannibals = {C}, Boat = {B}")
+        print("-"*61)
         main(M, C, B)
 
     print("[End of Death-First Search Algorithm]\n")
