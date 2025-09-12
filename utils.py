@@ -44,5 +44,5 @@ def print_solution(solution):
         print(f"Left Side: Missionaries = {state.ML}, Cannibals = {state.CL} | Right Side: Missionaries = {state.MR}, Cannibals = {state.CR} | Boat at '{state.boat}' side ")
     
     depth = len(path) - 1
-    print(f"\nSolution depth (Number of moves): {depth}")
+    print(f"\n[Solution depth (Number of moves): {depth}]")
     return depth
