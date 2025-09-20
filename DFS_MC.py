@@ -6,7 +6,7 @@ class State:
         self.ML = ML
         self.CL = CL
         self.boat = boat
-        self.m_total = m_total
+        self.m_total = m_total  
         self.c_total = c_total
         self.boat_capacity = boat_capacity
         self.parent = None
@@ -160,11 +160,11 @@ if __name__ == "__main__":
         (5, 5, 3),
     ]
 
-    print("\n[Start of Death-First Search Algorithm]")
-    print("\n---------------- Missionaries and Cannibals (Death-First Search) ----------------\n")
+    print("\n[Start of Depth-First Search Algorithm]")
+    print("\n---------------- Missionaries and Cannibals (Depth-First Search) ----------------\n")
     for idx, (M, C, B) in enumerate(test_cases, start=1):
         print(f"----------------------- Test Case {idx} -----------------------\nScenario: Missionaries = {M}, Cannibals = {C}, Boat = {B}")
         print("-"*60)
         main(M, C, B)
 
-    print("[End of Death-First Search Algorithm]\n")
+    print("[End of Depth-First Search Algorithm]\n")
